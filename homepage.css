@@ -1,0 +1,57 @@
+body, html {
+	height: 100%;
+	width: 100%;
+}
+
+body {
+	background-color: rgb(63,81,181);
+}
+
+.main-section {
+	position: relative;
+	height: 500px;
+	width: auto;
+}
+
+.main-section .counter {
+	text-align: center;
+	color: white;
+}
+
+.counter-number{
+	font-style: serif;
+	font-size: 8vw;
+}
+
+.counter-label {
+	padding-top: -20px;
+	font-size: 3.0vw;
+}
+
+.sub-main {
+	opacity: 0;
+	height: 500px;
+	width: auto;
+	text-align: center;
+}
+
+.tagline {
+	font-size: 8.0vw;
+	color: white;
+	font-family: 'lato';
+}
+
+#main-button {
+	margin-top: 40px;
+	color: rgb(63,81,181);
+	background-color: white;
+	height: 60px;
+}
+
+#main-button-text{
+	font-family: 'lato';
+	line-height: 60px;
+	font-weight: 700;
+	font-size: 5vw;
+}
+
