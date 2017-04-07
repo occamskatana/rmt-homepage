@@ -1,5 +1,5 @@
 body, html {
-	height: 100vh;
+	height: 80vh;
 	width: 100vw;
 }
 
@@ -11,7 +11,8 @@ body {
 .main-section {
 	margin-top: 5%;
 	position: relative;
-	height:30vw;
+	height:30vh;
+	max-height: 30vh;
 	width: auto;
 	max-width: 1000px;
 }
@@ -23,7 +24,7 @@ body {
 
 .counter-number{
 	font-style: serif;
-	font-size: 8vw;
+	font-size: 15vmin;
 }
 
 .counter-label {
@@ -34,17 +35,24 @@ body {
 }
 
 .sub-main {
+	margin-top: 5%;
 	opacity: 0;
 	height: 40vh;
 	width: auto;
 	text-align: center;
 	padding-top: 50px;
+	max-width: 1000px;
+	text-align: center;
 }
 
 .tagline {
-	font-size: 8.0vw;
+	font-size: 10.1vmin;
 	color: white;
 	font-family: 'lato';
+}
+
+.tagline-cell {
+	margin-left: 12%;
 }
 
 #main-button {
@@ -59,6 +67,6 @@ body {
 	font-family: 'lato';
 	line-height: 60px;
 	font-weight: 700;
-	font-size: 4rem;
+	font-size: 4vmin;
 }
 

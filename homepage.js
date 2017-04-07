@@ -1,14 +1,14 @@
-var deadNumber;
-var secondsCountdown;
+var deadNumber = countDead();
+var secondsCountdown = setTimer(0, 79);
 
-
+startCounter()
+updateDom()
 
 $(document).ready(function(){
 	deadNumber = countDead();
-	secondsCountdown = 79;
-	startCounter()
 	setTimeout(fadeIn, 2200);
 })
+
 
 
 
@@ -24,8 +24,8 @@ function countDead(){
 }
 
 function startCounter(){
-	setInterval(function(){deadNumber++; secondsCountdown = 79;}, 79000);
 	setInterval(function(){
+        if(secondsCountdown < 1 ){deadNumber++; secondsCountdown = 79;}
 		secondsCountdown--;
 		updateDom()
 	}, 1000)
@@ -58,6 +58,11 @@ function fadeIn(){
 	var sub = $('.sub-main');
 	sub.animate({opacity:1}, 1000)
 }
+
+function setTimer(min, max) {
+  return Math.floor(Math.random() * (max - min)) + min;
+}
+
 
 function addCommas(str) {
     var parts = (str + "").split("."),

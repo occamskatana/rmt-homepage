@@ -76,6 +76,17 @@ body {
 	opacity: 0;
 }
 
+.card-row {
+	width: 85vw;
+	margin-left: -10vw;
+}
+
+/*.card-over {
+	width: 25vw;
+	margin-left: 3vw;
+	margin-right: 3vw;
+}*/
+
 
 #second-main {
 	opacity: 0;
