@@ -1,0 +1,86 @@
+body, html {
+	height: 100vh;
+	width: 100vw;
+}
+
+body {
+	background-color: rgb(63,81,181);
+}
+
+.main-section {
+	height: 50vh;
+	width: 65%;
+	margin-top: 80px;
+	padding-top: 20%;
+}
+
+.main-section h1 {
+	color: white;
+	font-family: 'Roboto', sans-serif;
+}
+
+.main-section .main-blurb {
+	color: white;
+	font-family: 'Volkorn';
+	font-size: 2vw;
+}
+
+.main-section .conclusion {
+	color: white;
+	font-family: 'Volkorn';
+	font-size: 2.3vw;
+}
+
+.blurb {
+	margin-top: 8vh;
+	max-width: 65%;
+}
+
+.card-image img{
+	height: 50px;
+	width: auto;
+}
+
+.third-section {
+	margin-top: -15px;
+}
+
+.third-section .blurb {
+	margin-top: 4vh;
+}
+
+.sub-main {
+	background: white;
+	height: 60vh;
+	width: 65%;
+	padding-bottom: 150px;
+	margin-bottom: 15px;
+}
+
+.rmt-button{
+	background: rgb(63,81,181);
+}
+
+.sub-main	h1 {
+	font-family: 'Roboto';
+	color: rgb(63,81,181);
+}
+
+.sub-main p {
+	color: black;
+	font-family: 'Volkorn';
+	font-size: 2vw;
+}
+
+#first-main {
+	opacity: 0;
+}
+
+
+#second-main {
+	opacity: 0;
+}
+
+#third-main {
+	opacity: 0;
+}

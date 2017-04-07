@@ -7,7 +7,7 @@ $(document).ready(function(){
 	deadNumber = countDead();
 	secondsCountdown = 79;
 	startCounter()
-	setTimeout(fadeIn, 3500);
+	setTimeout(fadeIn, 2200);
 })
 
 
@@ -27,7 +27,6 @@ function startCounter(){
 	setInterval(function(){deadNumber++; secondsCountdown = 79;}, 79000);
 	setInterval(function(){
 		secondsCountdown--;
-		console.log(deadNumber, secondsCountdown)
 		updateDom()
 	}, 1000)
 }
@@ -36,7 +35,7 @@ function startCounter(){
 function updateDom(){
 	var deathsDom = $("h1#junkie-dead-counter");
 	var counterDom = $("h1#od-countdown");
-	deathsDom.text(deadNumber);
+	deathsDom.text(addCommas(deadNumber));
 	counterDom.text(secondsCountdown);
 }
 
@@ -58,5 +57,36 @@ function updateDom(){
 function fadeIn(){
 	var sub = $('.sub-main');
 	sub.animate({opacity:1}, 1000)
+}
+
+function addCommas(str) {
+    var parts = (str + "").split("."),
+        main = parts[0],
+        len = main.length,
+        output = "",
+        first = main.charAt(0),
+        i;
+
+    if (first === '-') {
+        main = main.slice(1);
+        len = main.length;    
+    } else {
+        first = "";
+    }
+    i = len - 1;
+    while(i >= 0) {
+        output = main.charAt(i) + output;
+        if ((len - i) % 3 === 0 && i > 0) {
+            output = "," + output;
+        }
+        --i;
+    }
+    // put sign back
+    output = first + output;
+    // put decimal part back
+    if (parts.length > 1) {
+        output += "." + parts[1];
+    }
+    return output;
 }
 
